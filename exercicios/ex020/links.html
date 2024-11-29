@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+<style>
+    /* Seletores personalizados
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = children
+    */
+    body {
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    a {
+        color: red;
+        text-decoration:none;
+        font-weight: bold;
+    }
+
+    a:visited {
+        color: red;
+    }
+
+    a:hover {
+        color: black;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: blue;
+    }
+
+    .especial {
+        background-color: brown;
+    }
+
+    .especial::before {
+        content: '➡';
+    }
+
+    .especial::after {
+        content: '⬅';
+    }
+</style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositorio Github</a></li>
+        <li><a href="https://youtube.com/curso e video/" class="especial">Canal do Youtube</a></li>
+        <li><a href="http://www.cursoemvideo.com" class="especial">Site do curso em video</a></li>
+        <!--Por padrao dos links do HTML sem CSS ficam roxos os que já foram visitados e azul quando nao foi visitado ainda-->
+        <!--Pseudo-classes definem os estados de elementos dentro da html-->
+        <!--Os pseudo-elementos são a parte periferica  do conteudo que pode mexer nas classes, elementos-->
+    </ul>
+</body>
+</html>
